@@ -20,7 +20,9 @@ Template.selectUser.events({
 Template.selectUser.helpers({
   options: function() {
     var query = Session.get('select.user.input');
-    var re = '^' + query;
-    return Users.find({name: {$regex: re}});
+    if (query.length) {
+      var re = '^' + query;
+      return Users.find({name: {$regex: re}});
+    }
   }
 });
