@@ -11,10 +11,16 @@
   width:210px;
 }
 .options {
+  border:1px solid;
   position:absolute;
   top:20px;
   background:white;
   padding:5px 20px;
-  width:210px;
+  width:168px;
 }
 
+.inputWrapper li {
+  cursor:pointer;
+  margin-left:-30px;
+  list-style:none;
+}
