@@ -34,8 +34,15 @@ Template.selections.helpers({
   }
 });
 
+Template.selections.events({
+  'click [data-action=clear]': function() {
+    Session.set('selected.id', null);
+  }
+});
+
 Template.option.events({
   'click': function() {
     Session.set('selected.id', this._id);
+    Session.set('select.user.input', null);
   }
 });

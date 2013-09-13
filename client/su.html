@@ -26,7 +26,12 @@
 </template>
 
 <template name="selections">
-  {{item.name}}
+  {{#with item}}
+  <span class="selected-option" title="{{_id}}">
+    {{name}}
+    <span data-action="clear">X</span>
+  </span>
+  {{/with}}
 </template>
 
 <template name="option">
