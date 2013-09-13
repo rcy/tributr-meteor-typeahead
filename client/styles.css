@@ -12,10 +12,12 @@
 }
 .options {
   border:1px solid;
+  border-top:none;
   position:absolute;
-  top:20px;
+  top:19px;
+  left:-1px;
   background:white;
-  width:208px;
+  width:210px;
 }
 
 /* .selected-option{ */
