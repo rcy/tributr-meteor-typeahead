@@ -12,8 +12,6 @@ Meteor.startup(function() {
   Users.insert({ name: 'geoff' });
 });
 
-Session.set('select.user.focus', false);
-
 Template.selectUser.events({
   'keyup input': function(e, t) {
     Session.set('select.user.input', $(e.target).val());
