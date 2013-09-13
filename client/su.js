@@ -2,6 +2,7 @@ Users = new Meteor.Collection(null);
 
 Meteor.startup(function() {
   Users.insert({ name: 'bob' });
+  Users.insert({ name: 'bob' });
   Users.insert({ name: 'beatrice' });
   Users.insert({ name: 'mary' });
   Users.insert({ name: 'mike' });
