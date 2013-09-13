@@ -27,3 +27,15 @@ Template.selectUser.helpers({
     }
   }
 });
+
+Template.selections.helpers({
+  item: function() {
+    return Users.findOne(Session.get('selected.id'));
+  }
+});
+
+Template.option.events({
+  'click': function() {
+    Session.set('selected.id', this._id);
+  }
+});
