@@ -4,6 +4,9 @@ Meteor.startup(function() {
   Users.insert({ name: 'bob' });
   Users.insert({ name: 'mary' });
   Users.insert({ name: 'sam' });
+  Users.insert({ name: 'ephraim' });
+  Users.insert({ name: 'ryan' });
+  Users.insert({ name: 'geoff' });
 });
 
 Session.set('select.user.focus', false);
