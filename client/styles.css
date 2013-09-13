@@ -2,14 +2,16 @@
   background:transparent;
   outline:none;
   border:0;
-  position:relative;
 }
 
 .inputWrapper {
-  border: 1px solid;
+  border:1px solid;
+  position:relative;
 }
 .options {
   position:absolute;
-  bottom:0px;
+  top:20px;
+  background:white;
+  padding:5px 20px;
 }
 
