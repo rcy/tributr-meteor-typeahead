@@ -17,6 +17,7 @@ Template.selectUser.events({
 Template.selectUser.helpers({
   options: function() {
     var query = Session.get('select.user.input');
-    return Users.find({name: query});
+    var re = '^' + query;
+    return Users.find({name: {$regex: re}});
   }
 });
