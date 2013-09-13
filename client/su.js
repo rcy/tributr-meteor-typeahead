@@ -12,8 +12,6 @@ Meteor.startup(function() {
   Users.insert({ name: 'geoff' });
 });
 
-Session.set('select.user.focus', false);
-
 Template.selectUser.events({
   'keyup input': function(e, t) {
     Session.set('select.user.input', $(e.target).val());
@@ -27,5 +25,17 @@ Template.selectUser.helpers({
       var re = '^' + query;
       return Users.find({name: {$regex: re}});
     }
+  }
+});
+
+Template.selections.helpers({
+  item: function() {
+    return Users.findOne(Session.get('selected.id'));
+  }
+});
+
+Template.option.events({
+  'click': function() {
+    Session.set('selected.id', this._id);
   }
 });

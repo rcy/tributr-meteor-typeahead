@@ -11,7 +11,7 @@
 </template>
 
 <template name="selectUser">
-  <input type="text">
+  <input type="text"> {{> selections}}
 
   {{#isolate}}
   <div class="options">
@@ -22,6 +22,11 @@
     {{/each}}
   </div>
   {{/isolate}}
+
+</template>
+
+<template name="selections">
+  {{item.name}}
 </template>
 
 <template name="option">
