@@ -17,6 +17,12 @@
   background:white;
   width:208px;
 }
+.selected-option{
+  position:absolute;
+  top:0px;
+  left:0px;
+  background:white;
+}
 
 .inputWrapper li {
   cursor:pointer;
