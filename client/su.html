@@ -5,13 +5,15 @@
 <template name="app">
   <h1>select user test</h1>
 
+  {{> selections}}
+
   <div class="inputWrapper">{{> selectUser}}</div>
 
   <p> this should be obscured by the options </p>
 </template>
 
 <template name="selectUser">
-  <input type="text"> {{> selections}}
+  <input type="text">
 
   {{#isolate}}
   <div class="options">
