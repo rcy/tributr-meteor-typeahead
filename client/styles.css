@@ -1,0 +1,15 @@
+.inputWrapper input {
+  background:transparent;
+  outline:none;
+  border:0;
+  position:relative;
+}
+
+.inputWrapper {
+  border: 1px solid;
+}
+.options {
+  position:absolute;
+  bottom:0px;
+}
+
