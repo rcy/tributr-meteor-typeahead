@@ -1,0 +1,29 @@
+<body>
+  {{> app}}
+</body>
+
+<template name="app">
+  <h1>select user test</h1>
+
+  {{> selectUser}}
+</template>
+
+<template name="selectUser">
+  <input type="text">
+
+  {{#isolate}}
+  <div class="options">
+    {{#each options}}
+    <ul>
+      {{> option}}
+    </ul>
+    {{/each}}
+  </div>
+  {{/isolate}}
+</template>
+
+<template name="option">
+  <li>
+    {{name}}
+  </li>
+</template>
